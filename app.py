@@ -36,4 +36,4 @@ def handle_message(event):
         line_bot_api.reply_message_with_http_info( ReplyMessageRequest( reply_token=event.reply_token, messages=[TextMessage(text=event.message.text)]))
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=8088)
